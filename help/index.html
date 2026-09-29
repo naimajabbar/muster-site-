@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<!-- Support email: jabbrixstudio@gmail.com -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Help &amp; FAQ — Muster Support</title>
+  <meta name="description" content="Answers to common Muster questions: setting alarms, iOS and Android reliability, trip alarms, sleep insights, privacy, and more." />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Help &amp; FAQ — Muster" />
+  <meta property="og:description" content="Answers to common Muster questions: alarms, missions, iOS and Android reliability, trip alarms, sleep insights, and more." />
+  <meta property="og:image"       content="../assets/app-icon.png" />
+
+  <link rel="icon" href="../assets/app-icon.png" type="image/png" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+  <header class="site-header">
+    <nav class="container nav-inner" aria-label="Main navigation">
+      <a href="../" class="nav-logo" aria-label="Muster — home">
+        <img src="../assets/app-icon.png" alt="" width="36" height="36" />
+        <span class="nav-logo-text">Muster</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="../help/"    aria-current="page">Help &amp; FAQ</a></li>
+        <li><a href="../billing/" aria-current="false">Billing</a></li>
+        <li><a href="../privacy/" aria-current="false">Privacy</a></li>
+        <li><a href="../contact/" class="nav-cta" aria-current="false">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ── PAGE HERO ── -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="badge">Help &amp; FAQ</span>
+        <h1>
+          <span class="hl">Answers<svg class="squiggle" viewBox="0 0 90 10" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M2,5 Q12,1 22,5 Q32,9 44,5 Q56,1 68,5 Q80,9 88,5"
+                  fill="none" stroke="#FF8A3D" stroke-width="2.8"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg></span>
+          to your questions
+        </h1>
+        <p>Browse by topic, or use your browser's Find (⌘F / Ctrl+F) to search within the page.</p>
+      </div>
+    </section>
+
+    <!-- ── FAQ ── -->
+    <section class="section" aria-label="Frequently asked questions">
+      <div class="container container--prose">
+
+        <!-- Getting started -->
+        <div class="faq-section" id="getting-started">
+          <h2 class="faq-section-title">Getting started</h2>
+          <ul class="accordion-list" role="list">
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-set-alarm">
+                How do I set an alarm?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-set-alarm">
+                <p>Open Muster and tap the <strong>Alarms</strong> tab (the bell icon). Tap the <strong>+</strong> button in the top-right corner. Set the time using the scroll wheel, choose your repeat days, and tap <strong>Save</strong>. The alarm will appear in your list and activate immediately.</p>
+                <p>On iOS, Muster uses <strong>AlarmKit</strong>, which requires your permission the first time you create an alarm. Tap <strong>Allow</strong> when the system prompt appears — without this, alarms won't ring.</p>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-mission">
+                What is a mission, and how do I choose one?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-mission">
+                <p>A <strong>mission</strong> is a task you must complete to dismiss your alarm — for example, solving a maths problem or matching a pattern tile. This helps you wake up properly instead of dismissing in your sleep.</p>
+                <p>When creating or editing an alarm, scroll to the <strong>Mission</strong> section. Choose a mission type and a difficulty level (Easy, Medium, or Hard). Harder difficulty means more problems or more complex patterns.</p>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-snooze">
+                How do snooze limits work?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-snooze">
+                <p>Each alarm has a configurable snooze limit — for example, <em>"Two snoozes. Then you're up."</em> Once you've used all allowed snoozes, the snooze button disappears and you must complete your mission to dismiss the alarm.</p>
+                <p>You can set the limit (including no snoozes at all) in the alarm's edit screen, under <strong>Snooze</strong>. You can also set the snooze duration.</p>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-gentle">
+                What is gentle wake-up?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-gentle">
+                <p><strong>Gentle wake-up</strong> ramps the alarm volume from silence up to full volume over a period you choose — between 30 seconds and 5 minutes. Instead of being jolted awake, you're eased into consciousness.</p>
+                <p>Enable it in the alarm's edit screen under <strong>Sound</strong>. Pick a ramp duration that suits your sleep style.</p>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-wakeup-check">
+                What is the wake-up check?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-wakeup-check">
+                <p>Five minutes after you dismiss an alarm, Muster sends a gentle follow-up notification asking whether you actually got up. If you're still in bed, you can ring the alarm again. This helps prevent the "dismiss and fall back asleep" trap.</p>
+                <p>You can enable or disable the wake-up check per alarm in its edit screen.</p>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-habits">
+                How do habit reminders work?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-habits">
+                <p>Open the <strong>Reminders</strong> tab to create habits like stretch, drink water, meditate, or read. Set a daily reminder time and Muster will notify you at that time every day.</p>
+                <p>Completing a habit builds a daily streak. Your current streak is shown on the habit card. Streaks reset if you miss a day, so stay consistent!</p>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-trip-intro">
+                What are trip alarms?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-trip-intro">
+                <p>Trip alarm (location alarm) wakes you a set amount of time before you arrive at a saved location — for example, <em>"Wake me 10 minutes before Central Station."</em> Muster monitors your position in the background and triggers the alarm when you're close enough.</p>
+                <p>Create a trip alarm from the <strong>Alarms</strong> tab by choosing <strong>Trip alarm</strong> as the alarm type. Search for a location or drop a pin on the map, set your lead time, and save.</p>
+                <p>See the <a href="#trip-location">Trip alarms &amp; location section</a> below for permission details.</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Alarm reliability iOS -->
+        <div class="faq-section" id="alarm-ios">
+          <h2 class="faq-section-title">Alarm reliability — iOS</h2>
+          <ul class="accordion-list" role="list">
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-alarmkit">
+                How does Muster use AlarmKit on iOS?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-alarmkit">
+                <p>Muster uses <strong>AlarmKit</strong>, Apple's system-level alarm framework introduced in iOS 26. AlarmKit alarms ring even in Silent mode and during Focus — exactly like your built-in Clock alarms. This requires your explicit permission the first time you create an alarm.</p>
+                <p>If you accidentally denied the permission, go to <strong>Settings → Privacy &amp; Security → Alarms</strong> (or Settings → Muster → Alarms) and turn it back on.</p>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-ios-silent">
+                Will Muster ring in Silent mode or during Focus?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-ios-silent">
+                <p>Yes — because Muster uses AlarmKit, alarms behave like system alarms. They will ring even if your iPhone is on Silent (the ring/silent switch) and even if a Focus mode is active, as long as the AlarmKit permission is granted.</p>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-ios-volume">
+                My alarm rang but the volume was very low. What happened?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-ios-volume">
+                <p>Check the following:</p>
+                <ul>
+                  <li>In the alarm's edit screen, confirm the volume is not set to a low level (or that gentle wake-up has a short ramp duration).</li>
+                  <li>On iOS, the Ringer volume controls alarm volume. Go to <strong>Settings → Sounds &amp; Haptics</strong> and increase the <strong>Ringer and Alerts</strong> slider.</li>
+                  <li>Make sure <em>Change with Buttons</em> is on so you can quickly adjust before bed.</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-ios-install">
+                Why does Muster need to stay installed to ring alarms?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-ios-install">
+                <p>AlarmKit alarms are tied to the app. If you delete Muster, all scheduled alarms are cancelled by iOS and will not ring. Keep the app installed if you rely on Muster alarms.</p>
+                <p>All your alarm data is stored locally in the app — uninstalling also deletes it. If you need to free up space, consider offloading the app (<strong>Settings → General → iPhone Storage → Muster → Offload App</strong>) rather than deleting it.</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Alarm reliability Android -->
+        <div class="faq-section" id="alarm-android">
+          <h2 class="faq-section-title">Alarm reliability — Android</h2>
+          <ul class="accordion-list" role="list">
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-battery-opt">
+                How do I disable battery optimisation for Muster?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-battery-opt">
+                <p>Battery optimisation can prevent Muster from waking the device at the correct time. To disable it:</p>
+                <ol>
+                  <li>Go to <strong>Settings → Apps → Muster</strong>.</li>
+                  <li>Tap <strong>Battery</strong>.</li>
+                  <li>Select <strong>Unrestricted</strong> (the label may vary by manufacturer — look for "No restrictions" or "Don't optimise").</li>
+                </ol>
+                <p>On some devices this option is under <strong>Settings → Battery → Battery optimisation → Muster</strong>.</p>
+                <p>Manufacturer-specific instructions for Samsung, Xiaomi, Oppo/Realme, Huawei, and others are available at <a href="https://dontkillmyapp.com" target="_blank" rel="noopener">dontkillmyapp.com</a>.</p>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-exact-alarm">
+                How do I allow the "Alarms &amp; reminders" permission?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-exact-alarm">
+                <p>Android 12+ requires apps to request a special <strong>Schedule Exact Alarms</strong> permission so alarms fire at precisely the right time. Without it, alarms may be delayed.</p>
+                <ol>
+                  <li>Go to <strong>Settings → Apps → Special app access → Alarms &amp; reminders</strong>.</li>
+                  <li>Find Muster and enable it.</li>
+                </ol>
+                <p>Muster will also prompt you for this permission when you create your first alarm.</p>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-notif-perm">
+                How do I allow notifications?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-notif-perm">
+                <p>On Android 13+, apps need your permission to post notifications. If you denied it during setup:</p>
+                <ol>
+                  <li>Go to <strong>Settings → Apps → Muster → Notifications</strong>.</li>
+                  <li>Enable <strong>Allow notifications</strong>.</li>
+                </ol>
+                <p>Make sure the <strong>Alarm</strong> notification channel is also enabled within that screen.</p>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-dnd">
+                Will Muster ring during Do Not Disturb?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-dnd">
+                <p>By default, Android's Do Not Disturb mode allows alarm sounds. However, on some devices this setting may be changed:</p>
+                <ol>
+                  <li>Go to <strong>Settings → Sound → Do Not Disturb → Exceptions</strong> (or <strong>Allowed exceptions</strong>).</li>
+                  <li>Make sure <strong>Alarms</strong> is enabled.</li>
+                </ol>
+                <p>If your device has a custom DND that still blocks Muster, try adding Muster as a priority app in DND exceptions.</p>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-oem-battery">
+                My phone's manufacturer seems to be killing Muster. What can I do?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-oem-battery">
+                <p>Many Android manufacturers add aggressive battery management on top of Android's standard settings. Here are specific tips:</p>
+                <ul>
+                  <li><strong>Samsung:</strong> Settings → Device Care → Battery → Background usage limits — turn off "Put unused apps to sleep" for Muster. Also disable "Adaptive battery".</li>
+                  <li><strong>Xiaomi / MIUI:</strong> Settings → Apps → Manage apps → Muster → Battery saver → No restrictions. Also enable Autostart.</li>
+                  <li><strong>Oppo / Realme:</strong> Settings → Battery → Energy savings → Custom — add Muster as an exception.</li>
+                  <li><strong>Huawei:</strong> Phone Manager → Protected apps — add Muster. Also Settings → Battery → App launch — set Muster to "Manage manually" and enable all three toggles.</li>
+                </ul>
+                <p>For more detailed, up-to-date instructions for your specific device, visit <a href="https://dontkillmyapp.com" target="_blank" rel="noopener">dontkillmyapp.com</a>.</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Prevent power off -->
+        <div class="faq-section" id="prevent-power-off">
+          <h2 class="faq-section-title">Prevent power off (Android)</h2>
+          <ul class="accordion-list" role="list">
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-ppo-what">
+                What does "Prevent power off" do?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-ppo-what">
+                <p><strong>Prevent power off</strong> is an optional Android-only feature. When it's turned on, Muster detects when you open the power menu while an alarm is ringing, and automatically closes that menu — preventing you from silencing the alarm by powering off your device.</p>
+                <p>It is designed for people who know their morning self will look for any way to silence the alarm and go back to sleep.</p>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-ppo-privacy">
+                Does "Prevent power off" spy on my screen?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-ppo-privacy">
+                <p>No. The feature uses Android's <strong>Accessibility Service API</strong> only to detect when the power menu appears while an alarm is actively ringing. It reads no screen content, captures no text you type, observes no other apps, and sends nothing off your device.</p>
+                <p>The service is <strong>strictly opt-in</strong>, is only active while an alarm is ringing, and is completely inactive at all other times.</p>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-ppo-enable">
+                Why does it need the Accessibility permission?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-ppo-enable">
+                <p>Detecting and dismissing the power menu requires the Android Accessibility Service API — the only API that can observe system-level UI events like the power-off dialog. There is no alternative API that would allow this feature to work without it.</p>
+                <p>Because Android surfaces a strong warning when enabling any Accessibility Service, we want to be completely transparent: Muster uses this permission <em>solely</em> to close the power menu while an alarm rings — nothing else.</p>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-ppo-disable">
+                How do I turn off "Prevent power off"?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-ppo-disable">
+                <p>You can turn it off in two ways:</p>
+                <ul>
+                  <li>Inside Muster: open <strong>Settings</strong> and toggle off <strong>Prevent power off</strong>.</li>
+                  <li>On your device: go to <strong>Settings → Accessibility → Installed apps</strong> (or <strong>Accessibility → Downloaded apps</strong>) → find Muster and disable it.</li>
+                </ul>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Trip alarms -->
+        <div class="faq-section" id="trip-location">
+          <h2 class="faq-section-title">Trip alarms &amp; location</h2>
+          <ul class="accordion-list" role="list">
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-loc-why">
+                Why does Muster need location access?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-loc-why">
+                <p>Trip alarm (location alarm) uses your device's location to detect when you're approaching the destination you set, so it can trigger the alarm before you arrive. Without location access, the feature cannot work.</p>
+                <p>Location is used <em>only</em> for this purpose — Muster does not use your location for advertising, analytics, or any other reason.</p>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-loc-background">
+                Why does Android need "Allow all the time" for trip alarms?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-loc-background">
+                <p>For a trip alarm to fire when you're travelling (with the phone in your pocket and the screen off), Muster must be able to check your location in the background. On Android, this requires the <strong>"Allow all the time"</strong> location permission.</p>
+                <p>If you only grant "While using the app", trip alarms will not trigger unless you keep Muster open in the foreground — which defeats the purpose.</p>
+                <p>To grant this: go to <strong>Settings → Apps → Muster → Location → Allow all the time</strong>.</p>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-loc-privacy">
+                Is my location sent to any server?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-loc-privacy">
+                <p>No. All location processing happens entirely on your device. Muster never transmits your location to our servers or any third party. The coordinates you enter for a trip alarm are saved on-device only and are deleted when you remove the alarm or uninstall the app.</p>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-loc-battery">
+                Will trip alarms drain my battery?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-loc-battery">
+                <p>Muster uses geofencing — a low-power technique where the system hardware monitors location and only wakes the app when you enter a radius, rather than continuously polling GPS. Battery impact is minimal in most cases.</p>
+                <p>If you notice significant battery drain, check that Muster is using <strong>Network/Wi-Fi location</strong> in addition to GPS (Android), and that you haven't accidentally set a very small trigger radius requiring frequent precise GPS checks.</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Sleep Insights -->
+        <div class="faq-section" id="sleep-insights">
+          <h2 class="faq-section-title">Sleep Insights</h2>
+          <ul class="accordion-list" role="list">
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-sleep-how">
+                How does Sleep Insights work?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-sleep-how">
+                <p>Sleep Insights reads your sleep session and sleep stage data from <strong>Apple Health</strong> (iOS) or <strong>Health Connect</strong> (Android) and displays it inside Muster on the <strong>Insights</strong> tab. You'll see trends like total sleep, deep sleep, and REM stages.</p>
+                <p>Muster requests <strong>read-only</strong> access — it never writes to Health or Health Connect. The data is processed on your device and never sent to our servers.</p>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-sleep-revoke">
+                How do I revoke Health access?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-sleep-revoke">
+                <ul>
+                  <li><strong>iOS:</strong> Open the <strong>Health</strong> app → your profile picture → Apps → Muster → turn off sleep data access.</li>
+                  <li><strong>Android:</strong> Open <strong>Health Connect</strong> → App permissions → Muster → remove sleep permissions.</li>
+                </ul>
+                <p>Revoking access will disable Sleep Insights but won't affect your alarms or reminders.</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Calendar -->
+        <div class="faq-section" id="calendar">
+          <h2 class="faq-section-title">Calendar on the Good-morning screen</h2>
+          <ul class="accordion-list" role="list">
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-cal-what">
+                What is the Good-morning screen?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-cal-what">
+                <p>After you dismiss an alarm, Muster optionally shows a <strong>Good-morning screen</strong> (called "Goomorning" in the app) displaying your upcoming calendar events for the day. It's a quick glance at what's ahead so you can start the day prepared.</p>
+                <p>This is an optional feature. If you'd rather not see calendar events, you can disable it in <strong>Settings</strong>.</p>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-cal-privacy">
+                Is my calendar data stored or shared?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-cal-privacy">
+                <p>No. Muster reads your device calendar <strong>read-only</strong> and only to display events on the Good-morning screen. Calendar data is not stored beyond what's needed for that display and is never transmitted or shared with anyone.</p>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-cal-revoke">
+                How do I revoke calendar access?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-cal-revoke">
+                <p>Go to your device <strong>Settings → Privacy (or Permissions) → Calendar → Muster</strong> and remove access. The Good-morning screen will no longer show calendar events.</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Data & backups -->
+        <div class="faq-section" id="data-backups">
+          <h2 class="faq-section-title">Data &amp; backups</h2>
+          <ul class="accordion-list" role="list">
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-data-local">
+                Is my data backed up to a cloud?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-data-local">
+                <p>Muster is fully <strong>local-first</strong>. All your alarms, habits, reminders, and settings are stored on your device only. There is no Muster account, no cloud sync, and no server-side storage.</p>
+                <p>This means your data is private by design — but it also means you need to be aware that:</p>
+                <ul>
+                  <li>Uninstalling the app <strong>permanently deletes all your data</strong>.</li>
+                  <li>Data does not automatically transfer to a new phone.</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-data-new-phone">
+                Can I move my alarms to a new phone?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-data-new-phone">
+                <p>Not automatically. Because all data lives locally, it doesn't transfer between devices on its own. However:</p>
+                <ul>
+                  <li><strong>iOS:</strong> If you restore from an iCloud backup or a full encrypted iPhone backup, Muster's local data should be included.</li>
+                  <li><strong>Android:</strong> Google's backup may or may not include app data depending on the manufacturer and app backup policy.</li>
+                </ul>
+                <p>If you switch phones without a full backup, you'll need to recreate your alarms manually. We're aware this is a pain point and are considering export/import features for a future update.</p>
+              </div>
+            </li>
+
+            <li class="accordion-item">
+              <button class="accordion-btn" aria-expanded="false" aria-controls="q-data-delete">
+                What happens if I uninstall Muster?
+                <span class="accordion-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="accordion-body" id="q-data-delete">
+                <p>Uninstalling deletes all locally stored data — alarms, habits, reminders, streaks, and settings. This action cannot be undone. If you want to free up space without losing data, use the <strong>Offload app</strong> feature on iOS instead of deleting.</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── CONTACT CTA ── -->
+    <section class="section section--sm" style="background:var(--surface);border-top:1px solid var(--border);">
+      <div class="container" style="text-align:center;">
+        <h2 style="margin-bottom:.75rem;">Still need help?</h2>
+        <p style="margin-bottom:1.5rem;max-width:440px;margin-inline:auto;">Can't find what you're looking for? Send us a message and we'll get back to you within a few days.</p>
+        <a href="../contact/" class="btn btn-primary">Email support</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">© 2026 Jabbrix Studio. All rights reserved.</p>
+      <nav aria-label="Footer links">
+        <ul class="footer-links" role="list">
+          <li><a href="../privacy/">Privacy</a></li>
+          <li><a href="../terms/">Terms</a></li>
+          <li><a href="../eula/">EULA</a></li>
+          <li><a href="../contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../main.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- Support email: jabbrixstudio@gmail.com -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found — Muster Support</title>
+  <meta name="description" content="The page you're looking for doesn't exist. Head back to Muster Support." />
+  <meta name="robots" content="noindex" />
+
+  <link rel="icon" href="assets/app-icon.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+  <header class="site-header">
+    <nav class="container nav-inner" aria-label="Main navigation">
+      <a href="./" class="nav-logo" aria-label="Muster — home">
+        <img src="assets/app-icon.png" alt="" width="36" height="36" />
+        <span class="nav-logo-text">Muster</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="help/">Help &amp; FAQ</a></li>
+        <li><a href="billing/">Billing</a></li>
+        <li><a href="privacy/">Privacy</a></li>
+        <li><a href="contact/" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section" aria-labelledby="error-heading">
+      <div class="container">
+        <div class="error-page">
+
+          <!-- Sun motif -->
+          <svg width="120" height="120" viewBox="0 0 120 120" fill="none" aria-hidden="true" style="margin-bottom:-.5rem;">
+            <circle cx="60" cy="60" r="48" fill="none" stroke="#FFB547" stroke-opacity=".15" stroke-width="14"/>
+            <circle cx="60" cy="60" r="32" fill="none" stroke="#FF8A3D" stroke-opacity=".2" stroke-width="8"/>
+            <circle cx="60" cy="60" r="18" fill="url(#sun404)" opacity=".85"/>
+            <defs>
+              <radialGradient id="sun404" cx="50%" cy="50%" r="50%">
+                <stop offset="0%"   stop-color="#FFD080"/>
+                <stop offset="100%" stop-color="#FF8A3D"/>
+              </radialGradient>
+            </defs>
+          </svg>
+
+          <p class="error-code" id="error-heading">404</p>
+
+          <h1 style="font-size:1.75rem;">Looks like this page overslept.</h1>
+
+          <p style="max-width:380px;">The page you're looking for doesn't exist or has moved. Let's get you back on track.</p>
+
+          <div style="display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;margin-top:.5rem;">
+            <a href="./" class="btn btn-primary">Go home</a>
+            <a href="help/" class="btn btn-ghost">Browse FAQ</a>
+            <a href="contact/" class="btn btn-secondary">Contact support</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">© 2026 Jabbrix Studio. All rights reserved.</p>
+      <nav aria-label="Footer links">
+        <ul class="footer-links" role="list">
+          <li><a href="privacy/">Privacy</a></li>
+          <li><a href="terms/">Terms</a></li>
+          <li><a href="eula/">EULA</a></li>
+          <li><a href="contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
