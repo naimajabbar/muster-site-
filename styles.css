@@ -473,9 +473,10 @@ a:hover { color: var(--primary); text-decoration-color: var(--primary); }
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.375rem;
   flex-shrink: 0;
 }
+
+.card-icon svg { display: block; }
 
 .card-icon--indigo  { background: var(--primary-lt); }
 .card-icon--orange  { background: var(--peach-lt); }
