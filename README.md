@@ -69,16 +69,13 @@ Before publishing, resolve every item marked `<!-- TODO: -->` or `[TODO]`:
 
 | # | File                          | Item                                                                         |
 |---|-------------------------------|------------------------------------------------------------------------------|
-| 1 | `docs/index.html`             | Replace `href="#"` on App Store badge button with real App Store link        |
-| 2 | `docs/index.html`             | Replace `href="#"` on Google Play badge button with real Google Play link    |
-| 3 | `docs/help/index.html`        | (inherits App Store/Play links from home page; no additional TODOs)          |
-| 4 | `docs/terms/index.html`       | Set the **Effective Date**                                                   |
-| 5 | `docs/terms/index.html`       | Set the **governing law jurisdiction**                                       |
-| 6 | `docs/terms/index.html`       | Review the full draft and **remove the draft banner** when approved          |
-| 7 | `docs/eula/index.html`        | Set the **Effective Date**                                                   |
-| 8 | `docs/eula/index.html`        | Add the **developer legal address** (Section 8)                              |
-| 9 | `docs/eula/index.html`        | Set the **governing law jurisdiction** (Section 12)                          |
-|10 | `docs/eula/index.html`        | Review the full draft and **remove the draft banner** when approved          |
+| 1 | `docs/terms/index.html`       | Set the **Effective Date**                                                   |
+| 2 | `docs/terms/index.html`       | Set the **governing law jurisdiction**                                       |
+| 3 | `docs/terms/index.html`       | Review the full draft and **remove the draft banner** when approved          |
+| 4 | `docs/eula/index.html`        | Set the **Effective Date**                                                   |
+| 5 | `docs/eula/index.html`        | Add the **developer legal address** (Section 8)                              |
+| 6 | `docs/eula/index.html`        | Set the **governing law jurisdiction** (Section 12)                          |
+| 7 | `docs/eula/index.html`        | Review the full draft and **remove the draft banner** when approved          |
 
 ---
 
